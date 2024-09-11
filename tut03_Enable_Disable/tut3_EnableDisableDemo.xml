@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="tut3_LoanDemo">
+  <test thread-count="5" name="LoanTest">
+    <classes>
+      <class name="tut3_Enable_Disable.LoanDepartment">
+		<methods>
+			<!--<exclude name="mobileLoginPersonalLoan"></exclude> -->
+			<!--if you want filter like starting name then use include -->
+		<include name="mobile.*">  </include>
+		</methods>
+
+      </class>
+    </classes>
+  </test> <!-- LoanTest -->
+</suite> <!-- tut3_LoanDemo -->

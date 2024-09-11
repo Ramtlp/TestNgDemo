@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!-- To pass the same parameters to all methods in a test, use the <parameter> tag before the <test> tag -->
+
+<!-- 
+<suite name="Suite1">
+
+	<parameter name="i" value="9"></parameter>
+	<parameter name="j" value="6"></parameter>
+
+	<test thread-count="5" name="Test1">
+		<classes>
+			<class name="tut6_parameterDemo.TestNgParameterDemo"></class>
+		</classes>
+	</test>
+</suite>
+ -->
+
+<!-- To pass different values to each test, place the <parameter> tag inside the <test> tag -->
+<suite name="Suite2">
+	<test name="Test2">
+		<parameter name="autoMobile" value="Maruti"></parameter>
+		<classes>
+			<class name="tut6_parameterDemo.AutoMobile"></class>
+		</classes>
+	</test>
+
+	<test name="Test3">
+		<parameter name="softwareCompany" value="Microsoft"></parameter>
+		<classes>
+			<class name="tut6_parameterDemo.SoftwareCompany"></class>
+		</classes>
+	</test>
+</suite>

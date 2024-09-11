@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!-- To execute multiple methods in parallel -->
+<!--
+ <suite name="Suite" parallel="methods" thread-count="2">
+  <test  name="Test">
+    <classes>
+      <class name="tut8_parallelTesting.ParallelTestDemo1"/>
+    </classes>
+  </test> 
+</suite>
+ -->
+
+<!-- To execute multiple classes in parallel -->
+
+<!-- 
+<suite name="Suite" parallel="classes" thread-count="2">
+	<test name="Test">
+		<classes>
+			<class name="tut8_parallelTesting.ParallelTestDemo1" />
+			<class name="tut8_parallelTesting.ParallelTestDemo2" />
+		</classes>
+	</test>
+</suite> 
+-->
+
+<!-- To execute multiple test suites in parallel -->
+
+<suite name="Suite" parallel="tests" thread-count="2">
+
+	<!-- First test suite -->
+	<test name="Test1">
+		<classes>
+			<class name="tut8_parallelTesting.ParallelTestDemo1" />
+		</classes>
+	</test>
+
+	<!-- Second test suite -->
+	<test name="Test2">
+		<classes>
+			<class name="tut8_parallelTesting.ParallelTestDemo2" />
+		</classes>
+	</test>
+</suite>  
